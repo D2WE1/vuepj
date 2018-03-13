@@ -7,6 +7,8 @@ import SearchContainer from './components/SearchContainer.vue'
 import NewsContainer from './components/news/NewsContainer.vue'
 import NewsInfoContainer from './components/news/newsInfo/NewsInfoContainer.vue'
 import Comment from './components/common/commentContainer.vue'
+import PhotosContainer from './components/photos/PhotosContarner.vue'
+import PhotoInfo from './components/photos/PhotosInfo.vue'
 
 // 3. 创建路由对象
 var router = new VueRouter({
@@ -18,6 +20,8 @@ var router = new VueRouter({
       {path:'/search',component:SearchContainer},
       {path:'/home/news',component:NewsContainer},
       {path:'/home/news/:id',component:NewsInfoContainer},
+      {path:'/home/photos',component:PhotosContainer},
+      {path:'/home/photos/:id',component:PhotoInfo},
 
   ],
   linkActiveClass:'mui-active'
